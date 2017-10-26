@@ -10,13 +10,9 @@ public class Main
 
         Scanner scan = new Scanner(System.in);
 
-        x = scan.nextInt();
-        y = scan.nextInt();
-        z = scan.nextInt();
+        Person M = new Person(scan.nextInt(), scan.nextInt(), scan.next());
 
-        System.out.println();
-
-        System.out.println("You entered: " + x + " " + y + " " + "And " + z);
+        System.out.println(M);
 
     }
 }
