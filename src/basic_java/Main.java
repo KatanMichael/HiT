@@ -10,9 +10,23 @@ public class Main
 
         Scanner scan = new Scanner(System.in);
 
-        Person M = new Person(scan.nextInt(), scan.nextInt(), scan.next());
+        Integer b = new Integer(10);
+        Integer a = new Integer(20);
 
-        System.out.println(M);
+        System.out.println("A is: "+a.intValue() + " And B is:" +b.intValue());
+
+        swap(a,b);
+
+        System.out.println("A is: "+a.intValue() + " And B is:" +b.intValue());
+
+    }
+
+    public static void swap(Integer a, Integer b)
+    {
+        Integer temp;
+        temp = a;
+        a = b;
+        b = temp;
 
     }
 }
