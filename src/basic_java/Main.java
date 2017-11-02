@@ -4,8 +4,11 @@ public class Main
 {
     public static void main(String args[])
     {
-        Person m = new Person(27, 3039, "Michael");
+        Student m = new Student(6, 3049, 27, "Michael");
         Person s = new Person(27, 2011, "Sapir");
+
+        Person e = new Student(6, 1234, 24, "Eddie");
+
 
 
         m.giveWallet(new Wallet());
@@ -15,6 +18,7 @@ public class Main
 
         System.out.println(m);
         System.out.println(s);
+        System.out.println(e);
 
 
 
