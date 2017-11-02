@@ -35,7 +35,7 @@ public class Person
         this.age = age;
         this.name = name;
         this.id = id;
-        this.x++;
+        x++;
     }
 
     public Person()
@@ -66,7 +66,7 @@ public class Person
     }
 
     private void setX(int x) {
-        this.x = x;
+        Person.x = x;
     }
 
     public void giveWallet(Wallet wallat) {
