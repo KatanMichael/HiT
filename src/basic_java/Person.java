@@ -1,10 +1,14 @@
 package basic_java;
 
+
 public class Person
 {
-    int age;
-    int id;
-    String name;
+    private static int x = 0;
+    private int age;
+    private int id;
+    private String name;
+    private Wallet myWallet;
+
 
     public int getAge() {
         return age;
@@ -31,19 +35,47 @@ public class Person
         this.age = age;
         this.name = name;
         this.id = id;
+        this.x++;
     }
 
     public Person()
     {
-        this.age = 0;
-        this.id = 0;
-        this.name = "Unknown";
+        this(0, 0, "Unknown");
+    }
+
+    public Person(int age) {
+        this(age, 0, "Unknown");
     }
 
 
     public String toString ()
     {
-        return ("My Name is: "+this.name
-                +", I'm "+this.age +" Years old.\nMy ID number is: "+this.id);
+        if (this.chackWallet() != null) {
+            return ("My Name is: " + this.name
+                    + ", I'm " + this.age + " Years old.\nMy ID number is: " + this.id +
+                    ", And I got " + chackWallet().getCurrentMoney() + " Money In My Wallet");
+        } else {
+            return ("My Name is: " + this.name
+                    + ", I'm " + this.age + " Years old.\nMy ID number is: " + this.id +
+                    ",And i dont have a wallet");
+        }
     }
+
+    public int getX() {
+        return x;
+    }
+
+    private void setX(int x) {
+        this.x = x;
+    }
+
+    public void giveWallet(Wallet wallat) {
+        this.myWallet = new Wallet(wallat);
+    }
+
+    public Wallet chackWallet() {
+        return (this.myWallet);
+    }
+
+
 }
