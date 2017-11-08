@@ -10,6 +10,7 @@ public class Main
         Person e = new Student(6, 1234, 24, "Eddie");
 
         System.out.println("OMG!!!!");
+        System.out.println("Can you see that?");
 
         m.giveWallet(new Wallet());
 
