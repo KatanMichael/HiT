@@ -9,9 +9,7 @@ public class Main
 
         Person e = new Student(6, 1234, 24, "Eddie");
 
-        yoooooooooooooooooooooooo
-                yooooooooooooooooooooooooyooooooooooooo
-
+        System.out.println("OMG!!!!");
 
         m.giveWallet(new Wallet());
 
