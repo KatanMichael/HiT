@@ -1,8 +1,8 @@
 package basic_java;
 
 public abstract class Human implements Time {
-    String name;
-    int age;
+    String name = "";
+    int age = 0;
 
     public int getAge() {
         return age;
