@@ -71,6 +71,8 @@ public class Mobile {
     }
 
     public String toString() {
+        String temp
+
         return ("Model: " + this.model + "\nPrice: " + this.price
                 + "\nTotal Storage:  " + this.totalStorage);
     }
