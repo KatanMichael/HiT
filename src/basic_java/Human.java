@@ -1,6 +1,6 @@
 package basic_java;
 
-public abstract class Human {
+public abstract class Human implements Time {
     String name;
     int age;
 
@@ -21,4 +21,11 @@ public abstract class Human {
     }
 
     public abstract void print();
+
+    public void agedUp() {
+        this.age++;
+    }
+
+
+
 }

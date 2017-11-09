@@ -69,4 +69,8 @@ public class Person extends Human
     public void print() {
         System.out.println("DAMM Person!");
     }
+
+    public void ageDown() {
+        this.age--;
+    }
 }
