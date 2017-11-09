@@ -33,4 +33,9 @@ public class Student extends Person {
                     "Im A student and i got " + this.getNumOfCurses() + " Curses");
         }
     }
+
+    public void print() {
+        System.out.println("DAMMM Student!");
+    }
+
 }

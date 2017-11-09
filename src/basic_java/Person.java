@@ -1,33 +1,22 @@
 package basic_java;
 
 
-public class Person
+public class Person extends Human
 {
     private static int x = 0;
-    private int age;
-    private int id;
+    int id;
     private String name;
     private Wallet myWallet;
 
 
-    public int getAge() {
-        return age;
-    }
+
     public int getId() {
         return id;
     }
-    public String getName() {
-        return name;
-    }
 
-    public void setAge(int age) {
-        this.age = age;
-    }
+
     public void setId(int id) {
         this.id = id;
-    }
-    public void setName(String name) {
-        this.name = name;
     }
 
     public Person(int age, int id, String name)
@@ -77,5 +66,7 @@ public class Person
         return (this.myWallet);
     }
 
-
+    public void print() {
+        System.out.println("DAMM Person!");
+    }
 }
