@@ -21,15 +21,15 @@ public class Person extends Human
 
     public Person(int age, int id, String name)
     {
-        this.age = age;
-        this.name = name;
+        super(age, name);
         this.id = id;
         x++;
     }
 
     public Person()
     {
-        this(0, 0, "Unknown");
+        super(0, "Unknon");
+        this.id = 0;
     }
 
     public Person(int age) {

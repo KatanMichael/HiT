@@ -1,6 +1,6 @@
 package basic_java;
 
-public class Student extends Person {
+public class Student extends Person implements Comparable<Student> {
     private int numOfCurses;
 
     public Student() {
@@ -38,4 +38,16 @@ public class Student extends Person {
         System.out.println("DAMMM Student!");
     }
 
+
+    @Override
+    public int compareTo(Student o) {
+        if (this.numOfCurses > o.numOfCurses) {
+            return 1;
+        }
+        if (this.numOfCurses < o.numOfCurses) {
+            return -1;
+        }
+
+        return 0;
+    }
 }
