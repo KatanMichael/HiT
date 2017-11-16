@@ -50,4 +50,8 @@ public class Student extends Person implements Comparable<Student> {
 
         return 0;
     }
+
+    public void printTime() {
+        System.out.println("OMG Im late to class!");
+    }
 }

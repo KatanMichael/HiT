@@ -73,4 +73,9 @@ public class Person extends Human
     public void ageDown() {
         this.age--;
     }
+
+    public void printTime() {
+        System.out.println("im just a person..");
+    }
+
 }
