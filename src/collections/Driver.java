@@ -55,4 +55,19 @@ public class Driver implements Comparable<Driver> {
                 ", age=" + age +
                 '}';
     }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+
+        Driver driver = (Driver) o;
+
+        return id == driver.id;
+    }
+
+    @Override
+    public int hashCode() {
+        return id;
+    }
 }
