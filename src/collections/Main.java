@@ -1,36 +1,8 @@
 package collections;
 
-import java.util.ArrayList;
-import java.util.Scanner;
-
 public class Main {
     public static void main(String[] args) {
-        Translator trans;
-        String heb = "", eng = "", resultEng;
-        ArrayList<String> engWords;
 
-        Scanner scan = new Scanner(System.in);
-
-        trans = new Translator();
-
-        while (true) {
-            System.out.println("enter word in hebrew and afer theat its meaning in english: ");
-            heb = scan.next();
-            if (heb.equals("stop")) {
-                break;
-            }
-            eng = scan.next();
-            trans.add(heb, eng);
-        }
-        System.out.println("Enter sentence in hebrew");
-        System.out.println();
-        scan.reset();
-        eng = scan.nextLine();
-        eng = scan.nextLine();
-
-        resultEng = trans.translate(eng);
-
-        System.out.println(resultEng);
     }
 
 }
